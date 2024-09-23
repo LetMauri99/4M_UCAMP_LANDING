@@ -2,18 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 html {
     font-size: 62.5%; /* 1rem = 10px */
 }
 body {
-    body {
-        font-family: 'Arial', sans-serif;
         line-height: 1.6;
         color: #333;
         overflow: auto; 
-    }
-    
 }
 a {
     text-decoration: none;
@@ -30,6 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
+    background-color: #111827; 
 }
 .logo {
     width: 6rem;
@@ -46,12 +46,25 @@ nav a {
     color: #fff;
     font-size: 1.5rem;
 }
-main {
-    padding: 2rem;
-}
-h1, h2, h3, h4 {
+h2, h3, h4 {
     color: #025;
 }
+.jumbotron-wrapper {
+    height: 40rem;
+    width: 100%;
+    background-color: #111827;
+    display: flex;
+    padding: 2rem 0;
+    color: white;
+}
+.jumbotron-wrapper h1{
+    font-size: 3.5rem;
+}
+.jumbotron-wrapper p{
+    padding: 3rem 0;
+    font-size: 1.5rem;
+}
+
 .jumbotron, .jumbotron-image {
     width: 50%;
     float: left;
@@ -61,10 +74,16 @@ h1, h2, h3, h4 {
     padding: 2rem;
     box-sizing: border-box;
 }
-
-.jumbotron h1, .jumbotron p {
-    margin-bottom: 1rem;
+.jumbotron-image{
+    height: 95%;
 }
+
+.jumbotron-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 
 #email-input {
     padding: 0.8rem;
@@ -91,11 +110,6 @@ button:hover {
     font-size: 0.8rem;
 }
 
-.jumbotron-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 .courses p, .courses h2, .courses span {
     margin: 1rem 0;
     text-align: center;
@@ -143,6 +157,60 @@ button:hover {
 .course-info div p {
     margin: 0.5rem 0;
 }
+.adicionales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #111827;
+}
+
+.adicionales-image, .adicionales-content {
+    width: 50%;
+}
+
+.adicionales-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.adicionales-content {
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.adicionales-content h3 {
+    margin-bottom: 0.5rem;
+    color: #025;
+}
+
+.adicionales-content h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.adicionales-content span {
+    display: block;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.contact-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #e1e1e1; 
+}
 
 .clearfix::after {
     content: "";
@@ -151,8 +219,60 @@ button:hover {
 }
 
 footer {
-    background: #222;
-    color: #fff;
-    padding: 1rem;
+    width: 100%;
+    background-color: #f4f4f4; 
+    padding: 2rem 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    margin-right: 1rem;
+    display: inline-block; 
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around; 
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.link-column h4 {
+    margin-bottom: 0.5rem;
+}
+
+.link-column a {
+    display: block;
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.footer-bottom {
     text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+    font-size: 0.9rem;
 }

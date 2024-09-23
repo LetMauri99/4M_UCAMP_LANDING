@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Biker's MX</title>
 </head>
 <body>
@@ -19,18 +22,19 @@
         </nav>
     </header>
     <main>
-        <section class="jumbotron">
-            <h1>Bienvenidos a Biker's MX</h1>
-            <p>Explora nuestra amplia gama de cursos y accesorios para motociclistas.</p>
-            <input type="email" placeholder="Ingresa tu correo" id="email-input">
-            <button style="background-color: #369ba8;">Enviar</button>
-            <span class="disclaimer">Te contactaremos en 24 horas. Aceptamos todas las tarjetas de crédito y débito. <a href="#">Conoce nuestros términos y condiciones.</a></span>
-        </section>
-        <div class="jumbotron-image">
-            <img src="./assets/jumbotron.jpg" alt="Imagen ilustrativa">
-        </div>
-        
-        <<section class="courses">
+        <div class="jumbotron-wrapper">
+            <section class="jumbotron">
+                <h1>Bienvenidos a Biker's MX</h1>
+                <p>Explora nuestra amplia gama de cursos y accesorios para motociclistas.</p>
+                <input type="email" placeholder="Ingresa tu correo" id="email-input">
+                <button style="background-color: #369ba8;">Enviar</button>
+                <span class="disclaimer">Te contactaremos en 24 horas. Aceptamos todas las tarjetas de crédito y débito. <strong><a href="#">Conoce nuestros términos y condiciones.</a></strong></span>
+            </section>
+            <div class="jumbotron-image">
+                <img src="./assets/jumbotron.jpg" alt="Imagen ilustrativa">
+            </div>
+        </div>        
+        <section class="courses">
             <p>Nuevos</p>
             <h2>Últimos Cursos</h2>
             <span>Explora los cursos más recientes y actualizados.</span>
@@ -70,26 +74,55 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
-            <h2>¿Quiénes somos?</h2>
-            <p>Somos una comunidad apasionada por las motocicletas, dedicada a enseñar y equipar a todos los entusiastas del motociclismo.</p>
-        </section>
+        <section class="adicionales">
+            <div class="adicionales-image">
+                <img src="./assets/adicionales.jpeg" alt="Imagen Adicional">
+            </div>
+            <div class="adicionales-content">
+                <h3>Te ayudamos a conseguirlo</h3>
+                <h2>Cuéntanos tus objetivos y podemos ayudarte a alcanzar ese nivel que buscas.</h2>
+                <span>Nuestra experiencia y recursos están a tu disposición para planificar y ejecutar los pasos necesarios hacia tus metas.</span>
+                <button class="contact-button">Contactar ya mismo</button>
+            </div>
+        </section>        
     </main>
     <footer>
-        <div class="social-media">
-            <ul>
-                <li><a href="https://facebook.com"><img src="./assets/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://instagram.com"><img src="./assets/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://twitter.com"><img src="./assets/twitter.png" alt="Twitter"></a></li>
-            </ul>
+        <div class="footer-top">
+            <div class="social-media">
+                <a href="https://facebook.com"><img src="./assets/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com"><img src="./assets/instagram.png" alt="Instagram"></a>
+                <a href="https://twitter.com"><img src="./assets/twitter.png" alt="Twitter"></a>
+                <a href="https://youtube.com"><img src="./assets/youtube.png" alt="YouTube"></a>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>GUITARRAS</h4>
+                    <a href="#">Catálogo</a>
+                </div>
+                <div class="link-column">
+                    <h4>SOPORTE</h4>
+                    <a href="#">Precios y cotizaciones</a>
+                    <a href="#">Certificaciones</a>
+                    <a href="#">Guías</a>
+                </div>
+                <div class="link-column">
+                    <h4>NOSOTROS</h4>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Trabajos</a>
+                    <a href="#">Prensa</a>
+                    <a href="#">Partners</a>
+                </div>
+                <div class="link-column">
+                    <h4>LEGAL</h4>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                </div>
+            </div>
         </div>
-        <div class="contact">
-            <p>Contacta con nosotros:</p>
-            <a href="mailto:contact@bikersmx.com">contact@bikersmx.com</a>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Biker's MX. Todos los derechos reservados. Esta es una página de aterrizaje ficticia para fines académicos</p>
         </div>
-        <div class="copyright">
-            <p>&copy; 2024 Biker's MX. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+    </footer>    
 </body>
 </html>
